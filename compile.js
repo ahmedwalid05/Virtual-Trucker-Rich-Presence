@@ -6,9 +6,10 @@ const {
 
 compile({
   input: './index.js',
-  name: './release/VirtualTruckerRichPresence',
+  name: './release/TangoTransportTrackerRichPresence',
   ico: './assets/vtrpc.ico',
   build: false,
-}).then(() => {
+  verbose: true, 
+}).then((err) => {
   console.log('success')
 })

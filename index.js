@@ -1,5 +1,6 @@
 // VIRTUAL TRUCKER RICH PRESENCE
 
+// console.log('Whats up')
 const LogManager = require('./LogManager');
 const logger = new LogManager(); 
 const config = require('./config');
@@ -24,6 +25,7 @@ updateChecker.checkUpdates();
 var promodsNotify = new ProModsNotifier();
 promodsNotify.notifyUser();
 
-
+console.log("Test")
 // maintain node process running
-process.stdin.resume();
+
+// process.stdin.resume();

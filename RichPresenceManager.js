@@ -217,7 +217,7 @@ class RichPresenceManager {
             var url = util.format('https://api.truckyapp.com/v1/richpresence/playerInfo?query=%s', this.lastData.telemetry.user.steamID);
 
             //console.log(url);
-            fetch(url, {headers: { 'User-Agent':  `VTRPC v${packageInfo.version}` }}).then((body) => {
+            fetch(url, {headers: { 'User-Agent':  `TTTRP v${packageInfo.version}` }}).then((body) => {
                 return body.json()
             }).then((json) => {
 
@@ -275,7 +275,7 @@ class RichPresenceManager {
                 var url = util.format('https://api.truckyapp.com/v2/map/%s/resolve?x=%s&y=%s', this.lastData.telemetry.game.gameID, this.lastData.telemetry.truck.worldPlacement.x, this.lastData.telemetry.truck.worldPlacement.z);
         
                 //console.log(url);
-                fetch(url, {headers: { 'User-Agent':  `VTRPC v${packageInfo.version}` }}).then((body) => {
+                fetch(url, {headers: { 'User-Agent':  `TTTRP v${packageInfo.version}` }}).then((body) => {
                     return body.json()
                 }).then((json) => {
             
@@ -355,8 +355,9 @@ class RichPresenceManager {
                 activity.details += util.format(` at ${this.calculateSpeed(speed, this.isAts(data))}${this.getSpeedUnit(this.isAts(data))}`);
             }
 
-            activity.largeImageText = `VTRPC v${packageInfo.version}`;
-            activity.largeImageKey = this.getLargeImageKey(data);
+            activity.largeImageText = `TTTRP v${packageInfo.version}`;
+            // activity.largeImageKey = this.getLargeImageKey(data);
+            activity.largeImageKey = "ets2rpc_active";
 
             if (this.mpInfo != null && this.mpInfo.online != false) {
                 activity.state += util.format('🌐 %s', this.mpInfo.server.name);
@@ -410,8 +411,9 @@ class RichPresenceManager {
                 key = config.constants.largeImageKeys.active;
             }
         }
+        
 
-        //console.log(key);
+        // console.log(prefix+key);
         return prefix + key;
     }
 

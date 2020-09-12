@@ -1,3 +1,3 @@
 @echo off
-taskkill -im VirtualTruckerRichPresence.exe /f /t
+taskkill -im TangoTransportTrackerRichPresence.exe /f /t
 RunHidden.vbs

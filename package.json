@@ -1,6 +1,6 @@
 {
-	"name": "virtual-trucker-rich-presence",
-	"version": "2.8.5",
+	"name": "tango-transport-trucker-rich-presence",
+	"version": "2.8.5-1",
 	"description": "An easy tool to let others see your current job, truck, etc. on Discord!",
 	"main": "index.js",
 	"dependencies": {
@@ -8,12 +8,12 @@
 		"assign-deep": "^1.0.1",
 		"date-now": "^1.0.1",
 		"dateformat": "^3.0.3",
-		"discord-rpc": "^3.1.1",
+		"discord-rpc": "^3.1.4",
 		"etcars-node-client": "^1.0.4",
 		"nexe": "^3.3.2",
-		"node-fetch": "^2.6.0",
+		"node-fetch": "^2.6.1",
 		"node-notifier": "^6.0.0",
-		"npm": "^6.14.5",
+		"npm": "^6.14.8",
 		"open": "^7.0.3",
 		"uWebSockets.js": "github:uNetworking/uWebSockets.js#v16.4.0",
 		"update": "^0.7.4",
@@ -22,7 +22,7 @@
 	"devDependencies": {},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/VirtualTruckerRPC/Virtual-Trucker-Rich-Presence.git"
+		"url": "https://github.com/ahmedwalid05/Virtual-Trucker-Rich-Presence.git"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -32,11 +32,12 @@
 		"compile": "node compile.js",
 		"release": "npm run compile && iscc .\\setup\\InnoSetupScript.iss"
 	},
-	"author": "VirtualTruckerRPC Team",
+	"author": "Forked From: VirtualTruckerRPC Team, Modified By: ahmedwalid05",
 	"contributors": [
 		"dowmeister",
 		"jammerxd",
-		"SgtBreadStick"
-	],
+		"SgtBreadStick",
+		"ahmedwalid05"
+	],``
 	"license": "MIT"
 }

@@ -1,16 +1,18 @@
+
+#pragma include __INCLUDE__ + ";" + "C:\Program Files (x86)\Inno Download Plugin"
 #include <idp.iss>
 
-#define MyAppName "Virtual Trucker Rich Presence"
-#define MyAppVersion "2.8.5"
-#define MyAppPublisher "Virtual Trucker Rich Presence"
+#define MyAppName "Tango Transport Tracker Rich Presence"
+#define MyAppVersion "2.8.5.1"
+#define MyAppPublisher "Tango Transport Tracker Rich Presence"
 #define MyAppURL "https://vtrpc.live"
-#define MyAppExeName "VirtualTruckerRichPresence.exe"
-#define MyServiceName "VirtualTruckerRichPresence"
+#define MyAppExeName "TangoTransportTrackerRichPresence.exe"
+#define MyServiceName "TangoTransportTrackerRichPresence"
 #define RunHiddenVbs "RunHidden.vbs"
 #define RebootVTRPC "RebootVTRPC.bat"
 
 [Setup]
-AppId={{29075F67-AFC2-4622-AE1B-7D965BC53408}}
+AppId={{9cab465e-eec3-4a65-b284-9f05c3781250}}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 AppVerName={#MyAppName} {#MyAppVersion}
@@ -22,7 +24,7 @@ AppMutex={#MyAppExeName}
 DefaultDirName={pf64}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=no                                                                                                           
-OutputBaseFilename=VirtualTruckerRichPresenceSetup
+OutputBaseFilename=TangoTransportTrackerRichPresenceSetup
 SetupIconFile=..\assets\vtrpc.ico
 Compression=lzma2/ultra64
 SolidCompression=yes
@@ -47,7 +49,7 @@ Name: full; Description: "Full installation";
 Name: update; Description: "Update installation"; Flags: iscustom
 
 [Components]
-Name: app; Description: "Virtual Trucker Rich Presence v{#MyAppVersion}"; Types: full update; Flags: fixed disablenouninstallwarning
+Name: app; Description: "Tango Transport Tracker Rich Presence v{#MyAppVersion}"; Types: full update; Flags: fixed disablenouninstallwarning
 Name: etcars; Description: "ETCARS 0.15.386 (Required)"; Types: full; Flags: disablenouninstallwarning
 
 [Languages]
@@ -58,7 +60,7 @@ Type: filesandordirs; Name: "{pf64}\{#MyAppName}"
 Type: filesandordirs; Name: "{pf}\{#MyAppName}"
 
 [Files]
-Source: "..\release\VirtualTruckerRichPresence.exe"; DestDir: "{app}"; Flags: ignoreversion;
+Source: "..\release\TangoTransportTrackerRichPresence.exe"; DestDir: "{app}"; Flags: ignoreversion;
 Source: "..\vbs\RunHidden.vbs"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\bat\RebootVTRPC.bat"; DestDir: "{app}"; Flags: ignoreversion;
 Source: "..\node_modules\node-notifier\vendor\snoreToast\snoretoast-x64.exe"; DestDir: "{app}\vendor\SnoreToast\"; Flags: ignoreversion;

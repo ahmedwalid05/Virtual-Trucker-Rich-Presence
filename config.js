@@ -4,10 +4,11 @@ const packageInfo = require('./package.json');
 
 module.exports = {
     applications: {
-        ets2: '432559364772200479',
+        // ets2: '432559364772200479',
+        ets2: '754120377558368337',
         ats: '454028920107565107',
     },
-    version: `Virtual Trucker Rich Presence ${packageInfo.version}`,
+    version: `Tango Transport Tracker Rich Presence ${packageInfo.version}`,
     kmToMilesConversion: 0.62,
     mpCheckerIntervalMilliseconds: 5 * 60 * 1000,
     locationCheckerIntervalMilliseconds: 2.5 * 60 * 1000,
@@ -49,6 +50,6 @@ module.exports = {
         'volvo',
         'tesla'
     ],
-    latestReleaseAPIUrl: 'https://api.github.com/repos/VirtualTruckerRPC/Virtual-Trucker-Rich-Presence/releases/latest',
-    latestReleasePage: 'https://github.com/VirtualTruckerRPC/Virtual-Trucker-Rich-Presence/releases/latest'
+    latestReleaseAPIUrl: 'https://api.github.com/repos/ahmedwalid05/Virtual-Trucker-Rich-Presence/releases/latest',
+    latestReleasePage: 'https://github.com/ahmedwalid05/Virtual-Trucker-Rich-Presence/releases/latest'
 }
