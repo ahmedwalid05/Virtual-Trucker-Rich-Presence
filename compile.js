@@ -9,7 +9,12 @@ compile({
   name: './release/TangoTransportTrackerRichPresence',
   ico: './assets/vtrpc.ico',
   build: false,
-  verbose: true, 
-}).then((err) => {
+  // verbose: true, 
+  resources: [
+    './*',
+    './node_modules/**'
+  ]
+}).then(() => {
   console.log('success')
 })
+

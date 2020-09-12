@@ -28,4 +28,4 @@ promodsNotify.notifyUser();
 console.log("Test")
 // maintain node process running
 
-// process.stdin.resume();
+process.stdin.resume();
