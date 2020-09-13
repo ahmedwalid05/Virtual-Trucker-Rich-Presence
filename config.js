@@ -6,7 +6,7 @@ module.exports = {
     applications: {
         // ets2: '432559364772200479',
         ets2: '754120377558368337',
-        ats: '454028920107565107',
+        ats: '754120377558368337',
     },
     version: `Tango Transport Tracker Rich Presence ${packageInfo.version}`,
     kmToMilesConversion: 0.62,
