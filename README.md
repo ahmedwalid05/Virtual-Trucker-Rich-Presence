@@ -2,12 +2,11 @@
     <img src="https://i.sgtbrds.tk/js3fxk.png" width="100%" />
 </div>
 
-# Virtual Trucker Rich Presence
+# Tango Transport Tracker Rich Presence
 ## Version 2.8.5
 
-# VTRPC NODEJS HAS BEEN DEPRECTATED. PLEASE USE TRUCKY OVERLAY!
 ## Trucky Overlay Edition
-Want to make things even easier? Just install Trucky Overlayat https://truckyapp.com/overlay and VTRPC will be included!
+Want to make things even easier? Just install Trucky Overlay https://truckyapp.com/overlay and VTRPC will be included!
 
 ### Important message
 Any user found abusing Trucky API with VTRPC will be held accountable for any issues, and will most likely be banned from using Trucky API is the future.
@@ -44,7 +43,7 @@ Supports **Euro Truck Simulator 2**, **American Truck Simulator** and **Truckers
  - All previous versions of VTRPC will be removed!
 
 ## Use in end user environment
-* Install Virtual Trucker Rich Presence using a release installation package from [Releases Page](https://github.com/VirtualTruckerRPC/Virtual-Trucker-Rich-Presence/releases) .
+* Install Virtual Trucker Rich Presence using a release installation package from [Releases Page](https://github.com/ahmedwalid05/Virtual-Trucker-Rich-Presence/releases) .
 
 Take a look to [User Guide](UserGuide.md) for further details.
 
@@ -72,16 +71,16 @@ REQUIRED PROGRAMS:
 * Install Inno Download Plugin - https://bit.ly/2KnepSA
 * Open `setup\InnoSetup.iss` with InnoSetup and compile it
 * Run `iscc .\setup\InnoSetupScript.iss` (Add to PATH variable env `C:\Program Files (x86)\Inno Setup 5`)
-* Installation package will be written in `setup\Output\VirtualTruckerRichPresenceSetup.exe`
+* Installation package will be written in `setup\Output\TangoTransportTrackerRichPresenceSetup.exe`
 
 ### Why is there a VBScript in this project?
 We need `RunHidden.vbs` to run a packaged node.js app windowless in windows. So, the application is launched from that vbscript.
 
 ## Logging
 Log files are written in:
-* Windows: `%appdata%\VirtualTruckerRichPresence\`
-* Linux: `/var/local/VirtualTruckerRichPresence/`
-* MacOS: `/home/Library/Preferences/VirtualTruckerRichPresence/`
+* Windows: `%appdata%\TangoTransportTrackerRichPresence/`
+* Linux: `/var/local/TangoTransportTrackerRichPresence/`
+* MacOS: `/home/Library/Preferences/TangoTransportTrackerRichPresence/`
 
 ## Startup parameters
 * --dev : enable verbose development logging and dev environment behaviour
