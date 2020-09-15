@@ -61,10 +61,10 @@ class RichPresenceManager {
     // ETCARS FUNCTIONS //
     bindETCarsEvents() {
         var instance = this;
-
+        this.etcars.enableDebug = true;
         this.etcars.on('data', function (data) {
-            
             //use a try / catch as sometimes the data isn't there when first connecting...plus it's json parsing...
+            // instance.logger.debug("Received Data: "+data);
             try {
                 // putting apart last data received
                 instance.lastData = data;
@@ -120,10 +120,10 @@ class RichPresenceManager {
                                 instance.rpcOnChangingState = false;
                             }).catch( (err)=> {
                                 this.logger.error(err);
-                                this.logger.info('Restarting');
-                                exec('RebootVTRPC.bat', function (error, stdout, stderr) {
-                                    this.logger.error(stdout);
-                                });
+                                // this.logger.info('Restarting');
+                                // exec('RebootVTRPC.bat', function (error, stdout, stderr) {
+                                //     this.logger.error(stdout);
+                                // });
                             });
                         }
                     }
@@ -146,6 +146,7 @@ class RichPresenceManager {
                 }
             } catch (error) {
                 instance.logger.error(error);
+             
             }
         });
 
@@ -156,15 +157,15 @@ class RichPresenceManager {
         });
 
         this.etcars.on('error', function (data) {
-            this.logger.info('ETCars Error: ' + data);
+            instance.logger.info('ETCars Error: ' + JSON. stringify(data));
             instance.resetETCarsData();
             instance.destroyRPCClient();
             instance.resetMPChecker();
             instance.resetLocationChecker();
-            this.logger.info('Restarting');
-            exec('RebootVTRPC.bat', function (error, stdout, stderr) {
-                this.logger.error(stdout);
-            });
+            instance.logger.info('Restarting');
+            // exec('RebootVTRPC.bat', function (error, stdout, stderr) {
+            //     instance.logger.error(stdout);
+            // });
             
 
         });
