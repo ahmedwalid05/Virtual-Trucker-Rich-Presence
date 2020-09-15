@@ -2,4 +2,4 @@
 scriptdir = CreateObject("Scripting.FileSystemObject").GetParentFolderName(WScript.ScriptFullName)
 Set shell = CreateObject("Wscript.Shell")
 shell.CurrentDirectory = scriptdir
-shell.Run """" & scriptdir & "\LaggyLogistics.exe" & " ""--clientConfiguration=""" & scriptdir & "\clientconfiguration.json""", 0, False
+shell.Run """" & scriptdir & "\LaggyLogisticsRichPresence.exe" & " ""--clientConfiguration=""" & scriptdir & "\clientconfiguration.json""", 0, False

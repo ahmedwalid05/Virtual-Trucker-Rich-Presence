@@ -12,7 +12,7 @@
 #define RebootVTRPC "RebootVTRPC.bat"
 
 [Setup]
-AppId={{9cab465e-eec3-4a65-b284-9f05c3781250}}
+AppId={{b6a6f949-3fb1-42e1-8263-b66232e8d727}}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 AppVerName={#MyAppName} {#MyAppVersion}
