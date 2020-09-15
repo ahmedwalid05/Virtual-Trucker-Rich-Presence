@@ -24,7 +24,7 @@ module.exports = class LogManager {
     checkLogDirectory() {
         this.logDir = process.env.APPDATA || (process.platform == 'darwin' ? process.env.HOME + '/Library/Preferences' : '/var/local');
 
-        this.logDir = path.join(this.logDir, 'TangoTransportTrackerRichPresence');
+        this.logDir = path.join(this.logDir, 'LaggyLogisticsRichPresence');
 
         this.logFilePath = path.join(this.logDir, this.logFileName);
 

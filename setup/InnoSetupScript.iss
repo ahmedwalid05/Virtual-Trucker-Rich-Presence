@@ -2,12 +2,12 @@
 #pragma include __INCLUDE__ + ";" + "C:\Program Files (x86)\Inno Download Plugin"
 #include <idp.iss>
 
-#define MyAppName "Tango Transport Tracker Rich Presence"
+#define MyAppName "Laggy Logistics Rich Presence"
 #define MyAppVersion "2.8.5.1"
-#define MyAppPublisher "Tango Transport Tracker Rich Presence"
+#define MyAppPublisher "Laggy Logistics Rich Presence"
 #define MyAppURL "https://vtrpc.live"
-#define MyAppExeName "TangoTransportTrackerRichPresence.exe"
-#define MyServiceName "TangoTransportTrackerRichPresence"
+#define MyAppExeName "LaggyLogisticsRichPresence.exe"
+#define MyServiceName "LaggyLogisticsRichPresence"
 #define RunHiddenVbs "RunHidden.vbs"
 #define RebootVTRPC "RebootVTRPC.bat"
 
@@ -24,7 +24,7 @@ AppMutex={#MyAppExeName}
 DefaultDirName={pf64}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=no                                                                                                           
-OutputBaseFilename=TangoTransportTrackerRichPresenceSetup
+OutputBaseFilename=LaggyLogisticsRichPresenceSetup
 SetupIconFile=..\assets\vtrpc.ico
 Compression=lzma2/ultra64
 SolidCompression=yes
@@ -49,7 +49,7 @@ Name: full; Description: "Full installation";
 Name: update; Description: "Update installation"; Flags: iscustom
 
 [Components]
-Name: app; Description: "Tango Transport Tracker Rich Presence v{#MyAppVersion}"; Types: full update; Flags: fixed disablenouninstallwarning
+Name: app; Description: "Laggy Logistics Rich Presence v{#MyAppVersion}"; Types: full update; Flags: fixed disablenouninstallwarning
 Name: etcars; Description: "ETCARS 0.15.386 (Required)"; Types: full; Flags: disablenouninstallwarning
 
 [Languages]
@@ -60,7 +60,7 @@ Type: filesandordirs; Name: "{pf64}\{#MyAppName}"
 Type: filesandordirs; Name: "{pf}\{#MyAppName}"
 
 [Files]
-Source: "..\release\TangoTransportTrackerRichPresence.exe"; DestDir: "{app}"; Flags: ignoreversion;
+Source: "..\release\LaggyLogisticsRichPresence.exe"; DestDir: "{app}"; Flags: ignoreversion;
 Source: "..\vbs\RunHidden.vbs"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\bat\RebootVTRPC.bat"; DestDir: "{app}"; Flags: ignoreversion;
 Source: "..\node_modules\node-notifier\vendor\snoreToast\snoretoast-x64.exe"; DestDir: "{app}\vendor\SnoreToast\"; Flags: ignoreversion;

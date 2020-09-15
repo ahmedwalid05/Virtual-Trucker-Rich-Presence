@@ -1,6 +1,6 @@
 const { exec } = require('pkg');
 const childProcess = require('child_process');
-exec(['index.js', '--target', 'host', '--output', 'release/TangoTransportTrackerRichPresence.exe', '--assets', './clientconfiguration.json'])
+exec(['index.js', '--target', 'host', '--output', 'release/LaggyLogistics.exe', '--assets', './clientconfiguration.json'])
 
 // childProcess.execFile('./resource_hacker/ResourceHacker.exe',
 //     ["-addoverwrite",

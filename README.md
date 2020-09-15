@@ -2,7 +2,7 @@
     <img src="https://i.sgtbrds.tk/js3fxk.png" width="100%" />
 </div>
 
-# Tango Transport Tracker Rich Presence
+# Laggy Logistics Rich Presence
 ## Version 2.8.5
 
 ## Trucky Overlay Edition
@@ -71,16 +71,16 @@ REQUIRED PROGRAMS:
 * Install Inno Download Plugin - https://bit.ly/2KnepSA
 * Open `setup\InnoSetup.iss` with InnoSetup and compile it
 * Run `iscc .\setup\InnoSetupScript.iss` (Add to PATH variable env `C:\Program Files (x86)\Inno Setup 5`)
-* Installation package will be written in `setup\Output\TangoTransportTrackerRichPresenceSetup.exe`
+* Installation package will be written in `setup\Output\LaggyLogisticsRichPresence.exe`
 
 ### Why is there a VBScript in this project?
 We need `RunHidden.vbs` to run a packaged node.js app windowless in windows. So, the application is launched from that vbscript.
 
 ## Logging
 Log files are written in:
-* Windows: `%appdata%\TangoTransportTrackerRichPresence/`
-* Linux: `/var/local/TangoTransportTrackerRichPresence/`
-* MacOS: `/home/Library/Preferences/TangoTransportTrackerRichPresence/`
+* Windows: `%appdata%\LaggyLogisticsRichPresence/`
+* Linux: `/var/local/LaggyLogisticsRichPresence/`
+* MacOS: `/home/Library/Preferences/LaggyLogisticsRichPresence/`
 
 ## Startup parameters
 * --dev : enable verbose development logging and dev environment behaviour

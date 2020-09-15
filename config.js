@@ -5,10 +5,10 @@ const packageInfo = require('./package.json');
 module.exports = {
     applications: {
         // ets2: '432559364772200479',
-        ets2: '754120377558368337',
-        ats: '754120377558368337',
+        ets2: '755285851377893480',
+        ats: '755285851377893480',
     },
-    version: `Tango Transport Tracker Rich Presence ${packageInfo.version}`,
+    version: `Laggy Logistics Rich Presence ${packageInfo.version}`,
     kmToMilesConversion: 0.62,
     mpCheckerIntervalMilliseconds: 5 * 60 * 1000,
     locationCheckerIntervalMilliseconds: 2.5 * 60 * 1000,

@@ -1,4 +1,4 @@
-Thank you for installing Tango Transport Tracker Rich Presence!
+Thank you for installing Laggy Logistics Rich Presence!
 TTTRP is an easy tool to let others see your current job, truck, etc. using Discord Rich Presence!  
 
 ETCARS 0.15.386 is required for the RPC to work, older versions will not work.  

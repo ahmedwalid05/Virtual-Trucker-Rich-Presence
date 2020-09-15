@@ -6,7 +6,7 @@ const {
 
 compile({
   input: './index.js',
-  name: './release/TangoTransportTrackerRichPresence',
+  name: './release/LaggyLogisticsRichPresence',
   ico: './assets/vtrpc.ico',
   build: false,
   // verbose: true, 

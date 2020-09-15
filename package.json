@@ -1,5 +1,5 @@
 {
-	"name": "tango-transport-trucker-rich-presence",
+	"name": "laggy-logistics-rich-presence",
 	"version": "2.8.5-1",
 	"description": "An easy tool to let others see your current job, truck, etc. on Discord!",
 	"main": "index.js",
